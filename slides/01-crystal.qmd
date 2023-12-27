@@ -461,7 +461,7 @@ gt::gt(dict)
 
 library(tidyverse)
   
-df_raw <- readxl::read_excel("../data/messy_uc.xlsx", sheet = "Data", skip = 5) |>
+df_raw <- readxl::read_excel("data/messy_uc.xlsx", sheet = "Data", skip = 5) |>
   filter(!is.na(pat_id)) |>
   slice_head(n=10) |>
   select(pat_id:dob, start_bp, start_mes)
@@ -472,10 +472,6 @@ df_raw <- readxl::read_excel("../data/messy_uc.xlsx", sheet = "Data", skip = 5) 
 #| eval: false
 
 library(pointblank)
-
-# Import my data
-
-df_raw <- readxl::read_excel("data/mydata.csv")
 
 # Check my assumptions
 
