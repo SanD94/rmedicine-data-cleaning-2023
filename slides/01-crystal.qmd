@@ -513,10 +513,6 @@ create_agent(df_raw) |>
 
 library(codebookr)
 
-# Import my data
-
-df_raw <- readxl::read_excel("data/mydata.csv")
-
 # Create my codebook
 
 df_codebook <- codebook(df_raw)
